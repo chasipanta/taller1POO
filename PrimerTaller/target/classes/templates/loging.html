@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .fakeimg {
+          height: 200px;
+          background: #aaa;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="loging">Loging</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registro">Registrarse</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="usuarios">Lista de Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3">
+    <h2 style="color: red">INGRESO</h2>
+
+    <form action="" method="post" object="${registro}">
+
+        <div class="mb-3 mt-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="pswd">
+        </div>
+        <div class="mb-3">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" name="pswd">
+        </div>
+        <div class="mb-3">
+            <label for="edad">Edad:</label>
+            <input type="number" class="form-control" id="edad" placeholder="Ingesa tu edad" name="pswd">
+        </div>
+        <div class="mb-3">
+            <label for="usuario">Usuario:</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Ingresa tu usuario" name="pswd">
+        </div>
+        <div class="mb-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <a href="/paginasStriming" class="btn btn-danger">IR A LAS PÁGINAS DE STRIMING</a>
+    </form>
+</div>
+</body>
+</html>
